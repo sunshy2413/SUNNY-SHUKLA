@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPS Intrusion Detection</title>
+</head>
+<body>
+    <h1>AI-Based Intrusion Detection System for CPS</h1>
+    <form method="POST" action="/">
+        <label for="duration">Duration:</label><br>
+        <input type="text" id="duration" name="duration" required><br><br>
+        
+        <label for="protocol_type">Protocol Type:</label><br>
+        <input type="radio" id="TCP" name="protocol_type" value="TCP" checked>TCP
+        <input type="radio" id="UDP" name="protocol_type" value="UDP">UDP
+        <input type="radio" id="ICMP" name="protocol_type" value="ICMP">ICMP<br><br>
+        
+        <label for="src_bytes">Source Bytes:</label><br>
+        <input type="text" id="src_bytes" name="src_bytes" required><br><br>
+
+        <label for="dst_bytes">Destination Bytes:</label><br>
+        <input type="text" id="dst_bytes" name="dst_bytes" required><br><br>
+        
+        <label for="flag">Flag:</label><br>
+        <input type="radio" id="SF" name="flag" value="SF" checked>SF
+        <input type="radio" id="REJ" name="flag" value="REJ">REJ
+        <input type="radio" id="RSTO" name="flag" value="RSTO">RSTO<br><br>
+
+        <input type="submit" value="Predict">
+    </form>
+
+    {% if result %}
+        <h2>Prediction Result: {{ result }}</h2>
+    {% endif %}
+</body>
+</html>
