@@ -1,1 +1,1 @@
-# SUNNY-SHUKLA
+Cyber-Physical Systems (CPS) are vital to modern infrastructure, integrating physical processes with digital control. However, their interconnected nature makes them vulnerable to cyber threats. Artificial Intelligence (AI) enhances CPS security by enabling intelligent threat detection, real-time response, and system resilience. This project explores the use of AI, particularly machine learning, to safeguard CPS environments against cyber-attacks.
